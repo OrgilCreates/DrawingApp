@@ -1,0 +1,101 @@
+html, body {
+  margin: 0px;
+  height: 100%;
+}
+
+h1{
+    margin:0 0 20px 0;
+}
+
+.sidebar {
+	grid-area: sidebar;
+	overflow-y: scroll;
+}
+
+#content {
+	grid-area: content;
+}
+
+.header {
+	grid-area: header;
+	font-family: Helvetica, sans-serif;
+   
+}
+
+.option-heading{
+    font-size:0.69em;
+    display:inline-block;
+}
+
+/*
+.footer{
+  grid-area: footer;
+}
+*/
+
+.sideBarItem{
+	max-height: 50px;
+	max-width: 50px;
+	padding:5px;
+}
+
+.sideBarItem img{
+	max-height: 50px;
+	max-Width:50px;
+}
+
+
+.colourPalette{
+    grid-area: colourP;
+	display:flex;
+	flex-direction:grid;
+	flex-flow: wrap;
+}
+
+.options{
+	grid-area: options;
+	padding: 15px;
+}
+
+.colourSwatches{
+	box-sizing: border-box;
+	width: 50px;
+	height: 20px;
+	max-height: 20px;
+	max-width: 50px;
+	margin: 5px;
+    border-radius: 10px;
+}
+
+.wrapper {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 80px 280px  minmax(500px, 1fr);
+    grid-template-rows: 80px minmax(500px, 1fr) 10%;
+    grid-template-areas:
+           "header header header"
+            "sidebar content content"
+            "colourP colourP colourP";
+    grid-gap: 0px;
+    background-color: #d3d3d3;
+    color: #444;
+}
+
+.box {
+  background-color: #d3d3d3;
+  color: #fff;
+  font-size: 150%;
+}
+
+.header {
+  background-color: #545454;
+}
+
+
+a{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+	padding: 10px;
+    
+}

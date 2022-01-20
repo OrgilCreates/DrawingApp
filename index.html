@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- Orgil's Drawing Application  -->
+<html>
+  <head>
+      <!-- Libraries -->
+    <script src="lib/p5.min.js"></script>
+    <script src="lib/jquery.slim.min.js"></script>
+
+    <!-- Main sketch file -->
+    <script src="sketch.js"></script>
+    
+    <!-- Extra js files for the tools below -->
+    <script src="toolbox.js"></script>
+    <script src="colourPalette.js"></script>
+    <script src="helperFunctions.js"></script>
+    <script src="freehandTool.js"></script>
+    <script src="lineToTool.js"></script>
+    <script src="sprayCanTool.js"></script>
+    <script src="mirrorDrawTool.js"></script>
+    <script src="markerTool.js"></script>
+    <script src="rectTool.js"></script>
+    <script src="circleTool.js"></script>
+    <script src="rippleTool.js"></script>
+    <script src="eraserTool.js"></script>
+<!-- The CSS file -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+  	<div class="wrapper">
+    <div class="box header"><img src="assets/images/logo.png"  width="50%">&nbsp;
+          
+    <!-- Add extra button options for thickness flexibility -->   
+    <div style="float:right; color:black "> 
+        
+    <a style="color:aliceblue">options:</a>
+    <button id="XSButton">XS</button>
+    <button id="SButton">S</button>
+    <button id="MButton">M</button>       
+    <button id="LButton">L</button>
+    <button id="XLButton">XL</button>
+    <button id="thinnerButton">Size -</button>
+    <button id="thickerButton">Size +</button>
+    &nbsp;
+    <button id="clearButton" style="top:2px">Clear</button>
+    <button id="saveImageButton">Save Image</button>
+    <input type="file" id="filePrompt" style="display:none;">
+    &nbsp;
+        
+    </div>  
+      </div>
+      <div class="box sidebar"></div>
+      <div id="content"></div>
+      <div class="box colourPalette">&nbsp;Choose Colour&nbsp;</div>
+      <div class="box options"></div>
+	</div>
+  </body>
+</html>
